@@ -1,0 +1,458 @@
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+@font-face {
+    font-family: "GintoNord700";
+    src: url("../assets/fonts/Ginto-Nord-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GintoNord700-2";
+    src: url("../assets/fonts/Ginto-Nord-700.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ginto";
+    src: url("../assets/fonts/Ginto-700.woff") format("woff");
+}
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: #23272A;
+}
+
+header {
+    background: url("../assets/img/background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #404EED;
+    height: 94vh;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* HEADER NAV */
+
+.header-nav nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 86px 0px 86px;
+    font-family: 'gg sans Normal', sans-serif;
+}
+
+.header-nav nav svg {
+    color: #fff;
+}
+
+.header-a {
+    padding-top: 5px;
+}
+
+.header-a a {
+    padding-left: 19px;
+    padding-right: 19px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header-a a:hover {
+    text-decoration: underline;
+}
+
+.header-button-nav {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 16px 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'gg sans Medium', sans-serif;
+}
+
+.header-button-nav:hover {
+    box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    color: #404EED;
+    transition: .3s ease-in-out;
+}
+
+/* HEADER TEXT */
+
+.background-svg1 {
+    position: absolute;
+    bottom: 40px;
+    left: -360px;
+}
+
+.background-svg2 {
+    position: absolute;
+    bottom: 40px;
+    right: -304px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.header-text h1 {
+    font-family: "GintoNord700";
+    font-size: 55px;
+    color: #fff;
+}
+
+.header-text p {
+    font-family: "gg sans normal";
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.625;
+    margin-top: -10px;
+}
+
+/* HEADER BUTTONS */
+
+.button-container button:hover {
+    box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    transition: .3s ease-in-out;
+}
+
+.button-container a {
+    position: relative;
+}
+
+.button-container a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button-container a:hover::before {
+    opacity: 1;
+}
+
+.button-container a:hover svg path {
+    stroke: #404EED;
+    transition: stroke 0.3s ease-in-out;
+}
+
+.button-container a:hover .span-button-container {
+    color: #404EED;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.header-button button:hover {
+    background-color: #2c2f33;
+    border-color: #2c2f33;
+    box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    transition: .3s ease-in-out;
+}
+
+.header-button {
+    display: flex;
+}
+
+.button-container a {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    line-height: 24px;
+    cursor: pointer;
+    margin-right: 26px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    padding: 16px 32px;
+}
+
+.button-container a {
+    font-size: 20px;
+    color: #23272A;
+    font-family: "gg sans medium";
+    text-decoration: none;
+}
+
+.button-container a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-bottom: -4px;
+}
+
+.button-container button {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 14px 32px;
+    background-color: #23272A;
+    border: #23272A solid;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+
+/* MAIN SECTIONS */
+
+.sections {
+    margin-top: 120px;
+    font-family: "gg sans normal";
+}
+
+.sections h2 {
+    font-size: 50px;
+    font-family: "gg sans";
+    font-weight: bold;
+}
+
+.sections p {
+    font-size: 20px;
+    line-height: 1.625;
+    margin-bottom: 60px;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 img {
+    margin-left: 90px;
+}
+
+.section-text1 {
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-2 img {
+    margin-right: 70px;
+}
+
+.section-text2 {
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+}
+
+.section-3 img {
+    margin-left: 90px;
+}
+
+.section-text3 {
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f6f6f6;
+    padding-top: 100px;
+}
+
+.section-text4 h2 {
+    font-family: "GintoNord700";
+    font-size: 40px;
+}
+
+.section-text4 p {
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: -12px;
+}
+
+.section-4 img {
+    width: 1170px;
+}
+
+.section-5 {
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.section-5 img {
+    width: 520px;
+    position: absolute;
+}
+
+.section-5 h2 {
+    font-size: 35px;
+}
+
+.section-5-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION 5 BUTTON CHANGE THIS AFTER */
+
+.section-5-button {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section-5 a {
+    display: flex;
+    background-color: #5865f2;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: "gg sans medium";
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.section-5 a:hover {
+    background-color: #8ea1e1;
+    box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    transition: .3s ease-in-out;
+}
+
+.section-5 svg {
+    width: 25px;
+    padding-right: 7px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 90vh;
+    background: #23272A;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons {
+    /* Estilos para el lado izquierdo */
+}
+
+.footer-rightside {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-primary {
+    font-weight: bold;
+    color: #404EED;
+    font-family: "gg sans normal";
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.footer-ul {
+    list-style-type: none;
+    margin: 60px 100px 10px 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "gg sans normal";
+    font-weight: 300;
+}
+
+.footer-ul a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.footer-ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-ul>* {
+    margin-bottom: 5px;
+}
+
+.last-side-container {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.last-side {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 32px;
+    background: #404EED;
+}
+
+.last-side-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-side-content svg {
+    color: #fff;
+}
+
+.last-side-content a {
+    background-color: #404EED;
+    color: #fff;
+}
+
+.last-side-content a:hover {
+    background-color: #8ea1e1d3;
+    box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: -1px 15px 30px 0px rgba(0, 0, 0, 0.12);
+    transition: .3s ease-in-out;
+    color: #fff;
+}
+
+
+/* LANGUAGE SWITCHER */
