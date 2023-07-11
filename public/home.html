@@ -83,7 +83,7 @@
             <i class="fas fa-times"></i>
           </div>
           <div class="line-navbar"></div>
-          <li class="home-navbar disable-navbar"><a href="#">Home</a></li>
+          <li class="home-navbar disable-navbar"><a href="#" class="anchor-home">Home</a></li>
           <li><a href="#">Download</a></li>
           <li><a href="#">Nitro</a></li>
           <li><a href="#">Discover</a></li>
@@ -147,7 +147,7 @@
     </section>
   </header>
   <main class="sections">
-    <section class="section-1"><img src="../assets/img/sections-svg1.svg" alt="">
+    <section class="section-1 scroll-reveal"><img src="../assets/img/sections-svg1.svg" alt="">
       <div class="section-text1">
         <h2>
           Create an invite-only place where you belong
@@ -156,7 +156,7 @@
           your day without clogging up a group chat.</p>
       </div>
     </section>
-    <section class="section-2"><img src="../assets/img/sections-svg2.svg" alt="">
+    <section class="section-2 scroll-reveal"><img src="../assets/img/sections-svg2.svg" alt="">
       <div class="section-text2">
         <h2>
           Where hanging out is easy
@@ -166,7 +166,7 @@
           in to talk without having to call.</p>
       </div>
     </section>
-    <section class="section-3"><img src="../assets/img/sections-svg3.svg" alt="">
+    <section class="section-3 scroll-reveal"><img src="../assets/img/sections-svg3.svg" alt="">
       <div class="section-text3">
         <h2>
           From few to a fandom
@@ -175,7 +175,7 @@
           private channels, and more.</p>
       </div>
     </section>
-    <section class="section-4">
+    <section class="section-4 scroll-reveal">
       <div class="section-text4">
         <h2>RELIABLE TECH FOR STAYING CLOSE</h2>
         <p>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream
@@ -201,6 +201,17 @@
   <footer>
     <div class="container-footer">
       <div class="footer-leftside">
+        <div class="lang-dropdown">
+          <div class="languages" onclick="toggleDropdown()">
+            <img src="../assets/img/Flag_of_Us-1024x683.png" alt="us-flag">
+            <p>English, USA</p>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <ul id="language-list" style="display: none;">
+            <li><a href="home.html" class="es">
+              <img src="../assets/img/Flag_of_Spain-1024x683.png" alt="es-flag">Español</a></li>
+          </ul>
+        </div>
         <div class="footer-icons">
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
