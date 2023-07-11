@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "GintoNord700";
-    src: url("../assets/fonts/Ginto-Nord-700.woff") format("woff");
+    src: url("assets/fonts/Ginto-Nord-700.woff") format("woff");
 }
 
 @font-face {
     font-family: "GintoNord700-2";
-    src: url("../assets/fonts/Ginto-Nord-700.woff2") format("woff2");
+    src: url("assets/fonts/Ginto-Nord-700.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Ginto";
-    src: url("../assets/fonts/Ginto-700.woff") format("woff");
+    src: url("assets/fonts/Ginto-700.woff") format("woff");
 }
 
 * {
